@@ -1,0 +1,14 @@
+var infoArr = [{
+        image: "img-1.png",
+        title: "Image - 1"
+    },
+    {
+        image: "img-2.png",
+        title: "Image - 2"
+    },
+    {
+        image: "img-3.png",
+        title: "Image - 3"
+    }
+
+];

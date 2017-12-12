@@ -1,0 +1,91 @@
+@-webkit-keyframes fadeIn {
+    0%,
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes fadeOut {
+    0%,
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#container {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 600px;
+    height: 300px;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 1px solid #333;
+}
+
+
+#bubbles-container {
+
+    margin: 55px auto 0px auto;
+    width: 50%;
+    height: 20px;
+}
+
+.bubble {
+
+    margin-left: 20px;
+    margin-right: 20px;
+    transform-origin: center;
+    background-color: #3AB370;
+    border-radius: 100%;
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+    transform:scale(0.7);
+    -webkit-transform:scale(0.7);
+    transition: all 0.5s;
+}
+
+
+.bubble::before {
+
+    content: "";
+    position: absolute;
+    transform-origin: center;
+    transform: translate(-15%, -15%);
+    border-radius: 100%;
+    border: 1px solid #3AB370;
+    width: 20px;
+    height: 20px;
+
+}
+
+.bubble:hover{
+    background-color: #027AB6;
+}
+
+#content {
+    width: 400px;
+    height: 200px;
+    margin: 15px auto auto auto;
+}
+
+#texts{
+		margin-top: 15px;
+	    text-align: center;
+        font-family: 'Roboto', sans-serif;
+}
+
+.fadeIn{
+	-webkit-animation: fadeIn 0.5s ease-in 0s 1 normal forwards;
+	animation: fadeIn 0.5s ease-in 0s 1 normal forwards;
+}
+.fadeOut{
+	-webkit-animation: fadeOut 0.5s ease-in 0s 1 normal forwards;
+	animation: fadeOut 0.5s ease-in 0s 1 normal forwards;
+}
